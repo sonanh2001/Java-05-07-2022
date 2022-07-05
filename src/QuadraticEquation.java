@@ -10,16 +10,16 @@ public class QuadraticEquation {
                 }
             }
             else {
-                System.out.println(-c/b);
+                System.out.println(-c/(b*1.0));
             }
         }
         else{
             int delta=b*b-4*a*c;
             if(delta>0){
-                System.out.println((-b+Math.sqrt(delta))/(2*a) + " " + (-b-Math.sqrt(delta))/(2*a));
+                System.out.println((-b+Math.sqrt(delta))/(2*a*1.0) + " " + (-b-Math.sqrt(delta))/(2*a*1.0));
             }
             else if (delta==0){
-                System.out.println(-b/(2*a));
+                System.out.println(-b/(2*a*1.0));
             }
             else{
                 System.out.println("Vô nghiệm");
